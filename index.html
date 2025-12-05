@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Hogwart's Sorting Hat Questionnaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="main">
+
+    <header>
+    
+    </header>
+
+    <main>
+    
+    <h1>Hogwart's Sorting Hat Questionnaire</h1>
+    <section>
+            <img src="sortinghat.png" height="800px" width="715px" alt="sorting hat altimage">
+            <audio id="backgroundMusic" loop>
+                <source src="hogwarts-school-song.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <button onclick="playAudio()" class="audioback">Play the School Song</button>
+            <button onclick="stopAudio()" class="audioback2">Stop Music</button>
+    </section>
+    
+    <h2>Curious what house you would be sorted into?</h2>
+    <section>
+        <div>
+            <p id="redcolor">Are you a glorious Gryffindor?</p> 
+            <p id="bluecolor">A resourceful Ravenclaw?</p> 
+            <p id="yellowcolor">An honorable Hufflepuff?</p> 
+            <p id="greencolor">Or are you a sly Slytherin?</p> 
+            <p>Take the quiz to find out your TRUE house!</p>
+        </div>
+
+        <div>
+            <h2>A Brief History of Hogwarts</h2>
+            <p class="history">Founded in the 10th century by Godric Gryffindor, Rowena Ravenclaw, Helga Hufflepuff, and Salazar Slytherin in the Scottish Highlands 
+                due to persecution by Muggles, the school gathered students from all over the world. Many charms and spells hide Hogwarts from the 
+                Muggles, only letting them see a ruined castle. Much of the design and construction of Hogwarts remains an enigma even today. Even the 
+                headmasters themselves do not know all the secrets of Hogwarts...</p>
+            <p class="history">The most recent major historical event to occur at Hogwarts was the great battle between the forces of Voldemort and Harry Potter and his 
+                allies. That was the end of Voldemort's reign of terror in the wizarding world. Many heroes were made that day and many heroes were lost.</p>
+        </div>
+
+        <div>
+            <h2>Start here, <a href="#" id="playLink" class="yellow">Brave One</a></h2>
+            <audio id="soundEffect">
+                <source src="the-sorting-hat-has-spoken-ancient-magic-has-been-at-work-studying-your-courage-wisdom-kindness-and-ambition-soon-your-f.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+
+        <div>
+             <audio id="submitSound" src="sorting-sound-effect-meme.mp3" preload="auto"></audio>
+            <form class="myForm" id="myForm">
+                <div>
+                    <p id="cyancolor">What trait do you value most?</p>
+                        <div class="parent-container">
+                            <input type="radio" name="question1" class="question1" value="gryffin" id="Bravery">
+                            <label for="Bravery" class="question1">Bravery</label>
+                        </div>
+                        <div class="parent-container">
+                            <input type="radio" name="question1" class="question1" value="raven" id="Intelligence">
+                            <label for="Intelligence" class="question1">Intelligence</label>
+                        </div>
+                        <div class="parent-container">
+                            <input type="radio" name="question1" class="question1" value="slyther" id="Ambition">
+                            <label for="Ambition" class="question1">Ambition</label>
+                        </div>
+                        <div class="parent-container">
+                            <input type="radio" name="question1" class="question1" value="huffle" id="Loyalty">
+                            <label for="Loyalty" class="question1">Loyalty</label>
+                        </div>
+                        
+                </div>
+
+                <div>
+                    <p id="cyancolor">What is your greatest fear?</p>
+                        <div class="parent-container">
+                            <input type="radio" name="question2" class="question2" value="slyther" id="Powerlessness">
+                            <label for="Powerlessness" class="question2">Powerlessness</label>
+                        </div>
+                        <div class="parent-container">
+                            <input type="radio" name="question2" class="question2" value="raven" id="Mediocrity">
+                            <label for="Mediocrity" class="question2">Mediocrity</label>
+                        </div>
+                        <div class="parent-container">
+                            <input type="radio" name="question2" class="question2" value="huffle" id="Beingalone">
+                            <label for="Beingalone" class="question2">Being alone</label>
+                        </div>
+                        <div class="parent-container">
+                            <input type="radio" name="question2" class="question2" value="gryffin" id="Failure">
+                            <label for="Failure" class="question2">Failure</label>
+                        </div>
+                </div>
+
+                <div>
+                    <p id="cyancolor">Which magical creature would you adopt?</p>
+                        <div class="parent-container">
+                            <input type="radio" name="question3" class="question3" value="gryffin" id="Hippogriff">
+                            <label for="Hippogriff" class="question3">Hippogriff</label>
+                        </div>
+                        <div class="parent-container">
+                            <input type="radio" name="question3" class="question3" value="slyther" id="Basilisk">
+                            <label for="Basilisk" class="question3">Basilisk</label>
+                        </div>
+                        <div class="parent-container">
+                            <input type="radio" name="question3" class="question3" value="raven" id="Phoenix">
+                            <label for="Phoenix" class="question3">Phoenix</label>
+                        </div>
+                        <div class="parent-container">
+                            <input type="radio" name="question3" class="question3" value="huffle" id="Niffler">
+                            <label for="Niffler" class="question3">Niffler</label>
+                        </div>
+                </div>
+                <div id="subbtn">
+                    <button onclick="validateForm()" onclick="submit_quiz()" class="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    
+    </main>
+
+    <footer>
+        <hr class = thick>
+        author: Nellie Petersen 
+        <p class="copy">&copy; 2025 Hogwart's Sorting Hat Questionnaire. Images generated prompts give to: <a href="https://starryai.com/app/home" target="_blank" class="yellow" rel="noopener noreferrer">starry.com</a></p>
+        <p class="copy"> Facts about the history of Hogwarts and its houses aquired from: <a href="https://www.harrypotter.com/" target="_blank" class="yellow" rel="noopener noreferrer">harrypotter.com</a></p>
+    </footer>
+    <script src="extracreditjava.js"></script>
+</body>
+
+</html>
